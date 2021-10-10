@@ -1,0 +1,609 @@
+@import "functional_style.css";
+
+/* body {
+      
+} */
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.logo {
+    margin: 10px 60px;
+    font-weight: 900;
+    color: rgb(8, 8, 8);
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+}
+
+.navbar  {
+    height: 52px;
+}
+
+.catalog {
+    width: 27%;
+    height: 52px;
+}
+
+.search {
+    width: 48%;
+    height: 52px;
+}
+
+/* Каталог товарів*/
+.dropbtn {
+    background-color:  red;
+    color: white;
+    font-size: 20px;
+    border: none;
+    height: 52px;
+    width: 100%;
+    margin-left: 50%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;  
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 40px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px 0 16px;
+    text-decoration: none;
+    display: block;
+    width: 300px;
+    font-size: 19px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: rgb(232, 9, 9);
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.fa-tablet {
+    padding: 0 4px;
+}
+
+/* Поле пошуку на навбаре*/
+.box-sizing {
+    box-sizing: border-box;
+
+}
+
+.box-sizing form {
+    position: relative;
+    width: 100%;
+}
+
+.box-sizing input {
+    width: 95.5%;
+    height: 36px;
+    margin-top: 8px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    position: absolute;
+}
+
+.box-sizing .btn-search {
+    position: absolute; 
+    top: 1px;
+    right: 0;
+    width: 38px;
+    height: 34px;
+    border: none;
+    background: rgb(232, 9, 9);
+    border-radius: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.box-sizing .btn-icon {
+    width: 34px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    margin-top: 8px;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+}
+
+/* Іконки кабінету, порівняння, корзина */
+.icon_shop{
+    width: 25%;
+}
+
+figure {
+    width: 50px;
+    height: 20px;
+    margin-left: 45px;
+    float: left;
+}
+
+.fa-user, .fa-balance-scale, .fa-shopping-cart {
+    color: rgb(255, 255, 255);
+    margin-top: 8px;
+    margin-left: 5px 0;
+    font-size: 25px;
+    cursor: pointer;
+}   
+
+.user:hover,
+.balance:hover,
+.shopping:hover  {
+    text-decoration: none;
+}
+
+/* сайдбар с товарами */
+.drop-content{
+    color: #343a40;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.product {
+    line-height: 2.2;
+    font-size: 17.8px;
+    color: #343a40;
+    margin: 20px 10%;
+}
+
+.product:hover {
+    text-decoration: none;
+    color: red;
+}
+
+/* button return top */
+#top{
+    right:30px;
+    bottom: 30px;
+    position: fixed;
+    opacity: 0;
+}
+
+.btn-up {
+    width: 45px;
+    height: 45px;
+    border-radius: 40px;
+    color: white;
+    background-color: rgb(119, 104, 104);
+    border: none;
+}
+
+.btn-up:hover {
+    background-color: rgb(250, 20, 20);
+    border: none;
+}
+
+.glue {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #343a40;
+    border-color: #343a40;
+    -o-transition: .3s;
+    transition: .3s;
+    z-index: 111;
+}
+  .btn-after-color{
+      background-color: greenyellow;
+      color: black;
+    font-weight: bold;
+  }
+  .btn-after-color:hover{
+    background-color: greenyellow;
+}
+.btn-after-color::after{
+    content: 'ВВВВВ';
+}
+  /*  page Smartphone------------------------------------------------------------------------------------------- */
+.panel-filter {
+    width: 100%;
+    position: absolute;
+    height: 450px;  
+    padding-left: 20%;  
+}
+
+.button-brand {
+    padding: 12px 24px;
+    margin-right: 0;
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    background-color: white;
+}
+
+.button-brand:hover {
+    color: rgb(253, 7, 7);
+}
+
+.button-brand:focus{
+    outline: none;
+}
+
+  /*  filter zina  */
+.submit-prices {
+    width: 40px;
+    height: 30px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    color: blue;
+    cursor: pointer;
+    text-transform: capitalize;
+    border: 1px solid blue;
+    border-radius: 8px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+  
+
+
+@media (max-width: 575px) { 
+    .logo {
+        font-size: 25px;
+        color: rgb(255, 0, 0);
+    }
+    .collapse{
+        background-color: #343a40;
+        z-index: 10;
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .navbar-toggler{
+        background-color: black;
+        border: 2px solid white;
+        margin-top: -3px;
+    }
+    .navbar-toggler-icon{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK9kIESf1xh1G8r01ZPNKsjb5zrvhWUYHjlD0ji8aLeASb-XLlLqhT8Xs28NFbC4BeFaA&usqp=CAU) ;
+    }
+    .catalog {
+        width: 27%;
+    }
+    .dropbtn{
+        display: none;
+    }
+    .dropdown-content{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        box-shadow: none;
+        background-color: #343a40;
+    }
+    .dropdown-content a {
+        color: white;
+        border: none;
+    }
+    .search {
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 220px;
+    }
+    .icon_shop{
+        width: 35%;
+    }
+    .modal-content-data {
+        width: 90%; 
+    }
+    .button-type{
+        padding: 8px 20px;
+    }
+    input[type=text], input[type=password] {
+        padding: 6px 20px;
+    }
+    img.avatar {
+        width: 25%;
+    }
+    .box-sizing input {
+        width: 95%;
+    }
+    .box-sizing .btn-search {
+        top: 1px;
+        right: 1px;
+    }
+    .modal-backdrop{
+        z-index: 2;
+    }
+    .shopping_list td img {
+        width: 90%;
+    }
+    .shopping_list .name-name {
+        font-size: 10px;
+        text-align: left;
+    }
+    .shopping_list .price-price  {
+        font-size: 10px;
+    }
+    .shopping_list .tr-align {
+        font-size: 14px;
+    }
+    .plus_item {
+        padding: 0 5px 4px 5px;
+        font-size: 10px;
+        margin-top: -13px;
+    }
+    .minus_item {
+        padding: 0 7px 4px 7px;
+        font-size: 10px;
+    }
+    .chislo{
+        font-size: 10px;
+    }
+    #checkout, #clear_cart{
+        font-size: 14.5px;
+        height: 35px;
+    }
+    .shopping_list td,
+    .shopping_list th {
+        padding: 1px;;
+    }
+    #cart_content {
+        margin: 1px 0;
+        padding: 2px;
+    }
+    .bottom-panel{
+        font-size: 10px; 
+    } 
+    figure {
+        margin-left: 10px;
+    }
+    .drop-content{
+        display: none;
+    }
+    .card {
+        width: 90%;
+    }
+    .card-name{
+        font-size: 12.5px;
+    }
+    .card-price {
+        font-size: 18px;
+    }
+    /* PAGE SMARTPHONE */
+    .text-warning{
+        font-size: 20px;
+    }
+    .panel-filter {
+        width: 95%;
+        height: auto; 
+        padding-left: 1%;
+    }
+    .app2{
+        margin-top: 19%;
+        position: absolute;
+    }
+    .button-brand {
+        float: left;
+        margin-right: 0;
+        font-size: 11px;
+        padding: 1px 10px;
+    }
+    br {
+        display: none;
+    }
+    .app3{
+        margin-top: 19%;
+        position: absolute;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    .catalog {
+        width: 27%;
+    }
+    .dropdown-content {
+        margin-left: 0;
+    }
+    .search {
+        width: 38%;
+    }
+    .icon_shop{
+        width: 35%;
+    }
+    .box-sizing input {
+        width: 89.5%;
+    }
+    .dropbtn {
+        width: 100%;
+        margin-left: 6%;
+        font-size: 14px;
+    }
+    .box-sizing .btn-search {
+        top: 1px;
+        right: 1px;
+    }
+    figure {
+        margin-left: 10px;
+    }
+    .drop-content{
+        display: none;
+    }
+    .card {
+        width: 46%;
+    }
+    .card-name{
+        font-size: 12.5px;
+    }
+    .card-price {
+        font-size: 18px;
+    }
+    .modal-content-data {
+        width: 60%; 
+    }
+    .button-type{
+        padding: 8px 20px;
+    }
+    input[type=text], input[type=password] {
+        padding: 6px 20px;
+    }
+    img.avatar {
+        width: 25%;
+    }
+    /* PAGE SMARTPHONE */
+    .text-warning{
+        font-size: 24px;
+    }
+    .panel-filter {
+        width: 95%;
+        height: auto; 
+        padding-left: 1%;
+    }
+    .app2{
+        margin-top: 14%;
+        position: absolute;
+    }
+    .button-brand {
+        float: left;
+        margin-right: 0;
+        font-size: 13px;
+    }
+    br {
+        display: none;
+    }
+    .app3{
+        margin-top: 19%;
+        position: absolute;
+    }
+ }
+
+@media (min-width: 768px) and (max-width:991px) { 
+    .catalog {
+        width: 27%;
+    }
+    .dropdown-content {
+        margin-left: 0;
+    }
+    .search {
+        width: 44%;
+    }
+    .icon_shop{
+        width: 29%;
+    }
+    .box-sizing input {
+        width: 93.5%;
+    }
+    .dropbtn {
+        width: 100%;
+        margin-left: 15%;
+    }
+    .box-sizing .btn-search {
+        top: 1px;
+        right: 1px;
+    }
+    figure {
+        margin-left: 20px;
+    }
+    .product {
+        font-size: 13.5px;
+        margin: 20px 3%;
+    }
+    .card {
+        width: 46%;
+    }
+    .card-name{
+        font-size: 12.5px;
+    }
+    .card-price {
+        font-size: 18px;
+    }
+    .modal-content-data {
+        width: 55%; 
+    }
+    .button-type{
+        padding: 8px 20px;
+    }
+    input[type=text], input[type=password] {
+        padding: 6px 20px;
+    }
+    img.avatar {
+        width: 25%;
+    }
+}
+ 
+@media (min-width: 992px) and (max-width:1199px) { 
+    .catalog {
+        width: 27%;
+    }
+    .search {
+        width: 48%;
+    }
+    .icon_shop{
+        width: 25%;
+    }
+    .box-sizing input {
+        width: 94.5%;
+    }
+    .dropbtn {
+        width: 100%;
+        margin-left: 35%;
+    }
+    .box-sizing .btn-search {
+        top: 1px;
+        right: 1px;
+    }
+    figure {
+        margin-left: 30px;
+    }
+    .product {
+        font-size: 16.5px;
+        margin: 20px 5%;
+    }
+    .card-name{
+        font-size: 13.5px;
+    }
+    .card-price {
+        font-size: 20px;
+    }
+    .btn-buy {
+        width: 110px;
+    }
+    .modal-content-data {
+        width: 30%; 
+    }
+    .button-type{
+        padding: 8px 20px;
+    }
+    input[type=text], input[type=password] {
+        padding: 6px 20px;
+    }
+    img.avatar {
+        width: 25%;
+    }
+ }

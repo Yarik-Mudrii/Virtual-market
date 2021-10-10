@@ -1,0 +1,390 @@
+/* cards goods */
+.app {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 10px;
+    position: absolute;
+}
+
+.list {
+  max-height: 300px;
+}
+
+.card {
+    width: 31.5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 100ms ;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    padding-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 25px black;
+}
+
+.img-img{
+    width: auto;
+}
+
+.card-img {
+    margin: 10px auto;
+    width: 100%;   
+    height: 220px;
+}
+
+.card-name{
+    margin: 0 20px;
+    font-size: 15px;
+    text-align: justify; 
+}
+
+.card-price {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0 0 0 20px;
+    margin: 20px 0;
+}
+
+.card-price-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.btn-buy {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(197, 23, 31);
+    color: white;
+    margin: 0px auto;
+}
+
+.btn-buy:hover {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+/*  cart_shopping */
+.badge {
+    padding: 1px 9px 2px;
+    font-size: 12.025px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #70b9c5;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    z-index: 2;
+    margin-bottom: 2px;
+}
+
+.badge:hover {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+}
+  
+#wrapper {
+    width: 100%; 
+}
+
+#shopping{
+    background-color: #343a40;
+}  
+
+#cart_content {
+    margin: 10px 0;
+    padding: 5px;
+    border: 3px solid #060;
+}
+
+.item_box {
+    border: 1px solid #999;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.bottom-panel{
+    background-color:#AAAAAA; 
+    color: white; 
+}  
+
+.shopping_list {
+    width: 100%;
+    border: none;
+}
+
+.shopping_list td,
+.shopping_list th {
+    padding: 10px;
+    border: 1px solid #777474;
+}
+
+.shopping_list td img {
+    width: 40%;
+    margin: 0;
+}
+
+.price-price{
+    text-align: center;
+}
+
+.tr-align{
+    background-color:#AAAAAA; 
+    color: white; 
+    text-align:center;
+}
+
+#checkout, #clear_cart{
+    background-color: rgb(50, 112, 228);
+    border: 2px solid rgb(238, 95, 43);
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.img-clear-cart{
+    margin: 0 auto; 
+    display:block; 
+    width:50%;
+}
+
+#checkout:hover, #clear_cart:hover{
+    background-color: rgb(238, 95, 43);
+    color: black;
+}
+
+.del_item {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f00;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.plus_item {
+    padding: 0 7px 4px 7px;
+    background-color: rgb(15, 223, 15);
+    border-radius: 20px;
+    color: white;
+    margin: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+ 
+.minus_item {
+    padding: 0 9px 4px 9px;;
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-weight: bold;
+}
+
+.minus_item:hover,
+.plus_item:hover,
+.del_item:hover{
+    box-shadow: 0px 0px 4px black;
+}
+
+/* filter product  */
+.anime {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.hide {
+    animation-name: hide;
+    animation-duration: 5ms;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes hide {
+    0% {
+      visibility: visible;
+      height: 220px;
+    }
+    100% {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      max-width: 0;
+      font-size: 0;
+      margin: 0;
+      padding: 0;
+    }
+}
+
+/* pagination */
+#table  {
+    width: 100%;
+    background-color: #060;
+} 
+
+#table td {
+    border: none;
+    float: left;
+}
+
+#table tr {
+    border: none;
+    float: left;
+}
+
+#pagination {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+  justify-content: center;
+}
+
+#pagination li {
+    margin: 20px 5px 20px 0;
+    padding: 8px 15px;
+    border-radius: 38px;
+    border: 2px solid white;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    color: #484b4c;
+    background: white;
+}
+  
+#pagination li:hover, #pagination li.active {
+    cursor: pointer;
+    background-color: #081131;
+    color: white;
+    border: 2px solid #081131;
+}
+
+/* icon user */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.button-type{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button-type:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn-window {
+    width: auto;
+    padding: 10px 22px;
+    background-color: #f44336;
+    border: none;
+    color: white;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 25%;
+}
+
+.container {
+    padding: 10px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.modal-window {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content-data {
+    background-color: #fefefe;
+    margin: 1.5% auto;
+    border: 1px solid #888;
+    width: 30%; 
+}
+
+.close-modal-window {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close-modal-window:hover,
+.close-modal-window:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
